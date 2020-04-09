@@ -1,0 +1,35 @@
+entidades:
+
+professores (tabela):
+* pk
+* nome
+* enereço
+	-> rua
+	-> numero
+	-> bairro
+	-> cep
+	-> cidade
+* telefone
+* dataDeNascimento
+* 
+
+disciplinas (tabela):
+
+
+turma (tabela):
+
+
+
+aulas (tabela):
+*diaDaSemana
+*ordemDaAula
+- fk prof
+- fk disc
+- fk turma
+- fk lotação
+
+lotação (tabela):
+* pk 
+- fk prof
+- fk disc
+*carga horaria
